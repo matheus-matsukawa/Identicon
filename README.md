@@ -1,21 +1,16 @@
 # Identicon
 
-**TODO: Add description**
+Identicon generator app built during "The Complete Elixir and Phoenix Bootcamp" by Stephen Grider
 
-## Installation
+## How it works
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `identicon` to your list of dependencies in `mix.exs`:
+The app works via the command line, accepting a string to the main method and generating a .png identicon file on the root directory.
 
 ```elixir
-def deps do
-  [
-    {:identicon, "~> 0.1.0"}
-  ]
-end
+
+> iex -S mix
+iex> Identicon.main("something")
+
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/identicon](https://hexdocs.pm/identicon).
-
+This simple app was built using Elixir and EDG's Erlang module, elixir and erlang must be installed in order to run it
